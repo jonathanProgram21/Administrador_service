@@ -1,5 +1,7 @@
 package com.administracion.administration.entities;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -31,7 +33,7 @@ public class Evento {
     @Column(name = "salida_publico", nullable = false, length = 45)
     private String salidaGeneral;
     @Column(name = "fecha_evento", nullable = false, length = 45)
-    private String fecha;
+    private LocalDate fecha;
 
     @ManyToOne
     @JoinColumn(name = "fk_cuestionario", nullable = false)
@@ -40,19 +42,6 @@ public class Evento {
     public Evento() {
     }
 
-
-    public Evento(Long id, String nombreEvento, String descripcion, String entradaStaff, String salidaStaff,
-            String entradaGeneral, String salidaGeneral, String fecha, Cuestionario fkCuestionario) {
-        this.id = id;
-        this.nombreEvento = nombreEvento;
-        this.descripcion = descripcion;
-        this.entradaStaff = entradaStaff;
-        this.salidaStaff = salidaStaff;
-        this.entradaGeneral = entradaGeneral;
-        this.salidaGeneral = salidaGeneral;
-        this.fecha = fecha;
-        this.fkCuestionario = fkCuestionario;
-    }
 
 
 
@@ -112,11 +101,11 @@ public class Evento {
         this.salidaGeneral = salidaGeneral;
     }
 
-    public String getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 

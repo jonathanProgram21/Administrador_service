@@ -1,5 +1,6 @@
 package com.administracion.administration.repositories;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -20,5 +21,8 @@ public interface AuthRepository extends JpaRepository<Auth, Integer>{
         WHERE a.email = :email
     """)
     Integer obtenerIdUsuarioPorEmail(@Param("email") String email);
+
+    @Query("SELECT a.email FROM Auth a")
+    List<String> findAllEmails();
 }
  

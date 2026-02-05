@@ -8,6 +8,7 @@ import com.administracion.administration.DTOs.AuthResponseDTO;
 import com.administracion.administration.DTOs.RecibeEmail;
 import com.administracion.administration.services.IAuthService;
 import com.administracion.administration.services.usuarios.IUsuarioService;
+import com.administracion.administration.email.service.EmailService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,12 +27,15 @@ public class AppController {
 
     private final IAuthService IAS;
     private final PasswordEncoder passwordEncoder;
+    private final EmailService emailService;
 
     
     public AppController(IAuthService repoAuth,IUsuarioService iu,
-        PasswordEncoder passwordEncoder){
+        PasswordEncoder passwordEncoder,
+        EmailService emailService){
         this.IAS = repoAuth;
         this.passwordEncoder = passwordEncoder;
+        this.emailService = emailService;
     }
     
     public void testEncoder() {
@@ -55,9 +59,20 @@ public class AppController {
     }
     // Este metodo guarda el Auth de un usuario
     @PostMapping("/auth")
-    public ResponseEntity<AuthResponseDTO> postMethodName(@RequestBody RecibeEmail email) {
-    Integer idGenerado = IAS.saveAuth(email);
-    return ResponseEntity.status(HttpStatus.CREATED).body(new AuthResponseDTO(idGenerado, "contraseña registrada correctamente"));
+    public ResponseEntity<?> postMethodName(@RequestBody RecibeEmail email) {
+        String titulo = "Usuario Registrado en el sistema del teatro Auditorio Acolmizcli Nezahualcoyotl";
+        String contenido = "Usted ha sido resgistrado dentro de nuestra base de datos como usuario del sistema de tareas del"+
+                            "Teatro del Complejo Cultural y Recreativo Acolmiztli Nezahualcoyotl por lo que su informacion "+
+                            "sera debidamente usada para razones relacionadas al teatro";
+        try {
+            emailService.sendEmail(email.getEmail(), titulo, contenido);
+            Integer idGenerado = IAS.saveAuth(email);
+            return ResponseEntity.status(HttpStatus.CREATED).body(new AuthResponseDTO(idGenerado, "contraseña registrada correctamente"));
+        } catch (Exception e) {
+            return ResponseEntity.ok().body("Verifiacr que el correo ingresado este bien");
+        }
+
+    
     }  
 
     @GetMapping("/idUsuario/{email}")
