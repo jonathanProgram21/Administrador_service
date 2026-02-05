@@ -26,6 +26,7 @@ C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\co
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\DTOs\AuthResponseDTO.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\DTOs\CrearTareasDTO.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\DTOs\devolucionCuestionario.java
+C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\DTOs\notificaciones.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\DTOs\RecibeEmail.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\DTOs\TareaItemDTO.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\DTOs\UsuarioDetalleDTO.java
@@ -78,10 +79,16 @@ C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\co
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\documentos\DocumentosImpl.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\documentos\IDocumentosService.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\ActualizarUsuario.java
+C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\EventoMesDTO.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\EventoPendienteDTO.java
+C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\EventoPorMesDTO.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\EventoTablaDTO.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\IdNombre.java
+C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\interfaces\EventoPorMesProjection.java
+C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\interfaces\PromedioHorarioProjection.java
+C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\interfaces\TopMesProjection.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\PreguntaRespuestaDTO.java
+C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\ReporteEventosDTO.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\ResPre.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\TareasVista.java
 C:\Users\135jo\OneDrive\Escritorio\Diagramas UML\administration\src\main\java\com\administracion\administration\services\DTOs_de_respuestas\TareaUsuarioEventoDTO.java

@@ -23,6 +23,7 @@ com\administracion\administration\DTOs\RecibeEmail.class
 com\administracion\administration\services\DTOs_de_respuestas\ActualizarUsuario.class
 com\administracion\administration\controllers\PreguntasController.class
 com\administracion\administration\services\DTOs_de_respuestas\EventoTablaDTO.class
+com\administracion\administration\services\DTOs_de_respuestas\interfaces\PromedioHorarioProjection.class
 com\administracion\administration\email\BrevoEmailService.class
 com\administracion\administration\email\resetPassword\CodigoResetStore.class
 com\administracion\administration\services\documentos\DocumentosImpl.class
@@ -35,6 +36,7 @@ com\administracion\administration\email\DTO_emails\emailTo.class
 com\administracion\administration\repositories\EmpleadoRepository.class
 com\administracion\administration\repositories\TareasRepo.class
 com\administracion\administration\services\DTOs_de_respuestas\TareaUsuarioEventoDTO.class
+com\administracion\administration\services\DTOs_de_respuestas\interfaces\EventoPorMesProjection.class
 com\administracion\administration\entities\EstatusTarea.class
 com\administracion\administration\services\usuarios\IUsuarioService.class
 com\administracion\administration\services\cuestionarios\ICuestionarioService.class
@@ -42,6 +44,7 @@ com\administracion\administration\repositories\CuestionarioRepo.class
 com\administracion\administration\controllers\EventoController.class
 com\administracion\administration\services\IAuthService.class
 com\administracion\administration\entities\EstatusPregunta.class
+com\administracion\administration\services\DTOs_de_respuestas\ReporteEventosDTO.class
 com\administracion\administration\controllers\EmailController.class
 com\administracion\administration\DTOs\ActualizarRespuesta$ActualizarRespuestaBuilder.class
 com\administracion\administration\entities\Cuestionario.class
@@ -50,11 +53,13 @@ com\administracion\administration\email\resetPassword\CambioPasswordDTO.class
 com\administracion\administration\DTOs\UsuarioUpdateDTO.class
 com\administracion\administration\DTOs\ActualizarTiempoDTO.class
 com\administracion\administration\controllers\TestController.class
+com\administracion\administration\services\DTOs_de_respuestas\interfaces\TopMesProjection.class
 com\administracion\administration\DTOs\AgregarTareas$AgregarTareasBuilder.class
 com\administracion\administration\services\evento\EventoServiceImpl.class
 com\administracion\administration\auth\dto\LoginResponseDTO.class
 com\administracion\administration\email\resetPassword\PasswordResetController.class
 com\administracion\administration\entities\Usuario.class
+com\administracion\administration\services\DTOs_de_respuestas\EventoMesDTO.class
 com\administracion\administration\services\DTOs_de_respuestas\IdNombre.class
 com\administracion\administration\email\pruebaController.class
 com\administracion\administration\security\jwt\JwtUtil.class
@@ -93,10 +98,12 @@ com\administracion\administration\email\resetPassword\PasswordResetService.class
 com\administracion\administration\services\evento\IEventoService.class
 com\administracion\administration\auth\exceptions\CredencialesInvalidasException.class
 com\administracion\administration\DTOs\ActualizarTareasDTO.class
+com\administracion\administration\services\DTOs_de_respuestas\EventoPorMesDTO.class
 com\administracion\administration\controllers\CuestionarioController.class
 com\administracion\administration\DTOs\AuthDTO.class
 com\administracion\administration\configs\GlobalExceptionHandler.class
 com\administracion\administration\services\DTOs_de_respuestas\EventoPendienteDTO.class
+com\administracion\administration\DTOs\notificaciones.class
 com\administracion\administration\DTOs\UsuarioUpdateDTO$UsuarioUpdateDTOBuilder.class
 com\administracion\administration\auth\AuthController.class
 com\administracion\administration\DTOs\UsuarioListaDTO.class
